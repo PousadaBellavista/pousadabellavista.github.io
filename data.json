@@ -101,8 +101,8 @@
     "titulo": "Escolha onde descansar.",
     "itens": [
       {
-        "id": "economico",
-        "nome": "Econômico",
+        "id": "economico-duplo",
+        "nome": "Econômico Duplo",
         "chamada": "Simples e confortável, para quem quer aproveitar a Serra a dois.",
         "capacidade": 2,
         "camas": "Cama de casal",
@@ -141,129 +141,60 @@
         ],
         "fotos": [
           {
-            "src": "img/quartos/economico-01.webp",
-            "alt": "Economico — foto 1",
-            "mini": "img/quartos/economico-01.m.webp"
+            "src": "img/quartos/economico-duplo-01.webp",
+            "alt": "Econômico Duplo — foto 1",
+            "mini": "img/quartos/economico-duplo-01.m.webp"
           },
           {
-            "src": "img/quartos/economico-02.webp",
-            "alt": "Economico — foto 2",
-            "mini": "img/quartos/economico-02.m.webp"
+            "src": "img/quartos/economico-duplo-02.webp",
+            "alt": "Econômico Duplo — foto 2",
+            "mini": "img/quartos/economico-duplo-02.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-03.webp",
+            "alt": "Econômico Duplo — foto 3",
+            "mini": "img/quartos/economico-duplo-03.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-04.webp",
+            "alt": "Econômico Duplo — foto 4",
+            "mini": "img/quartos/economico-duplo-04.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-05.webp",
+            "alt": "Econômico Duplo — foto 5",
+            "mini": "img/quartos/economico-duplo-05.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-06.webp",
+            "alt": "Econômico Duplo — foto 6",
+            "mini": "img/quartos/economico-duplo-06.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-07.webp",
+            "alt": "Econômico Duplo — foto 7",
+            "mini": "img/quartos/economico-duplo-07.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-08.webp",
+            "alt": "Econômico Duplo — foto 8",
+            "mini": "img/quartos/economico-duplo-08.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-duplo-09.webp",
+            "alt": "Econômico Duplo — foto 9",
+            "mini": "img/quartos/economico-duplo-09.m.webp"
           }
         ]
       },
       {
-        "id": "luxo-terreo-triplo",
-        "nome": "Luxo Térreo Triplo",
-        "chamada": "No térreo, com espaço para três.",
+        "id": "terreo-triplo",
+        "nome": "Térreo Triplo",
+        "chamada": "No térreo, com espaço para três e ar-condicionado.",
         "capacidade": 3,
         "camas": "Cama de casal + 1 cama de solteiro",
         "caracteristicas": [
           "No térreo",
-          "Varanda compartilhada com rede"
-        ],
-        "disponivel": [
-          {
-            "icone": "ar",
-            "texto": "Ventilador"
-          },
-          {
-            "icone": "tv",
-            "texto": "TV"
-          },
-          {
-            "icone": "frigobar",
-            "texto": "Frigobar"
-          },
-          {
-            "icone": "check",
-            "texto": "Rede na varanda"
-          },
-          {
-            "icone": "check",
-            "texto": "Varanda compartilhada"
-          },
-          {
-            "icone": "cafe",
-            "texto": "Café da manhã incluso"
-          }
-        ],
-        "informacoes": [
-          "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
-        ],
-        "fotos": [
-          {
-            "src": "img/quartos/terreo-triplo-01.webp",
-            "alt": "Terreo Triplo — foto 1",
-            "mini": "img/quartos/terreo-triplo-01.m.webp"
-          },
-          {
-            "src": "img/quartos/terreo-triplo-02.webp",
-            "alt": "Terreo Triplo — foto 2",
-            "mini": "img/quartos/terreo-triplo-02.m.webp"
-          }
-        ]
-      },
-      {
-        "id": "superior",
-        "nome": "Superior",
-        "chamada": "Confortável e bem iluminado, para o casal.",
-        "capacidade": 2,
-        "camas": "Cama de casal",
-        "caracteristicas": [
-          "Varanda compartilhada com rede"
-        ],
-        "disponivel": [
-          {
-            "icone": "ar",
-            "texto": "Ventilador"
-          },
-          {
-            "icone": "tv",
-            "texto": "TV"
-          },
-          {
-            "icone": "frigobar",
-            "texto": "Frigobar"
-          },
-          {
-            "icone": "check",
-            "texto": "Rede na varanda"
-          },
-          {
-            "icone": "check",
-            "texto": "Varanda compartilhada"
-          },
-          {
-            "icone": "cafe",
-            "texto": "Café da manhã incluso"
-          }
-        ],
-        "informacoes": [
-          "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
-        ],
-        "fotos": [
-          {
-            "src": "img/quartos/superior-01.webp",
-            "alt": "Superior — foto 1",
-            "mini": "img/quartos/superior-01.m.webp"
-          },
-          {
-            "src": "img/quartos/superior-02.webp",
-            "alt": "Superior — foto 2",
-            "mini": "img/quartos/superior-02.m.webp"
-          }
-        ]
-      },
-      {
-        "id": "luxo-superior",
-        "nome": "Luxo Superior",
-        "chamada": "O único quarto com ar-condicionado.",
-        "capacidade": 2,
-        "camas": "Cama de casal",
-        "caracteristicas": [
           "Ar-condicionado",
           "Varanda compartilhada com rede"
         ],
@@ -299,14 +230,173 @@
         ],
         "fotos": [
           {
-            "src": "img/quartos/luxo-superior-01.webp",
-            "alt": "Luxo Superior — foto 1",
-            "mini": "img/quartos/luxo-superior-01.m.webp"
+            "src": "img/quartos/terreo-triplo-01.webp",
+            "alt": "Térreo Triplo — foto 1",
+            "mini": "img/quartos/terreo-triplo-01.m.webp"
           },
           {
-            "src": "img/quartos/luxo-superior-02.webp",
-            "alt": "Luxo Superior — foto 2",
-            "mini": "img/quartos/luxo-superior-02.m.webp"
+            "src": "img/quartos/terreo-triplo-02.webp",
+            "alt": "Térreo Triplo — foto 2",
+            "mini": "img/quartos/terreo-triplo-02.m.webp"
+          },
+          {
+            "src": "img/quartos/terreo-triplo-03.webp",
+            "alt": "Térreo Triplo — foto 3",
+            "mini": "img/quartos/terreo-triplo-03.m.webp"
+          },
+          {
+            "src": "img/quartos/terreo-triplo-04.webp",
+            "alt": "Térreo Triplo — foto 4",
+            "mini": "img/quartos/terreo-triplo-04.m.webp"
+          }
+        ]
+      },
+      {
+        "id": "superior-triplo",
+        "nome": "Superior Triplo",
+        "chamada": "Confortável e bem iluminado, com espaço para três.",
+        "capacidade": 3,
+        "camas": "Cama de casal + 1 cama de solteiro",
+        "caracteristicas": [
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ventilador"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h.",
+          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/superior-triplo-01.webp",
+            "alt": "Superior Triplo — foto 1",
+            "mini": "img/quartos/superior-triplo-01.m.webp"
+          },
+          {
+            "src": "img/quartos/superior-triplo-02.webp",
+            "alt": "Superior Triplo — foto 2",
+            "mini": "img/quartos/superior-triplo-02.m.webp"
+          },
+          {
+            "src": "img/quartos/superior-triplo-03.webp",
+            "alt": "Superior Triplo — foto 3",
+            "mini": "img/quartos/superior-triplo-03.m.webp"
+          },
+          {
+            "src": "img/quartos/superior-triplo-04.webp",
+            "alt": "Superior Triplo — foto 4",
+            "mini": "img/quartos/superior-triplo-04.m.webp"
+          }
+        ]
+      },
+      {
+        "id": "luxo-superior-duplo",
+        "nome": "Luxo Superior Duplo",
+        "chamada": "Amplo e aconchegante, para o casal.",
+        "capacidade": 2,
+        "camas": "Cama de casal",
+        "caracteristicas": [
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ventilador"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h.",
+          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/luxo-superior-duplo-01.webp",
+            "alt": "Luxo Superior Duplo — foto 1",
+            "mini": "img/quartos/luxo-superior-duplo-01.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-02.webp",
+            "alt": "Luxo Superior Duplo — foto 2",
+            "mini": "img/quartos/luxo-superior-duplo-02.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-03.webp",
+            "alt": "Luxo Superior Duplo — foto 3",
+            "mini": "img/quartos/luxo-superior-duplo-03.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-04.webp",
+            "alt": "Luxo Superior Duplo — foto 4",
+            "mini": "img/quartos/luxo-superior-duplo-04.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-05.webp",
+            "alt": "Luxo Superior Duplo — foto 5",
+            "mini": "img/quartos/luxo-superior-duplo-05.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-06.webp",
+            "alt": "Luxo Superior Duplo — foto 6",
+            "mini": "img/quartos/luxo-superior-duplo-06.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-07.webp",
+            "alt": "Luxo Superior Duplo — foto 7",
+            "mini": "img/quartos/luxo-superior-duplo-07.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-08.webp",
+            "alt": "Luxo Superior Duplo — foto 8",
+            "mini": "img/quartos/luxo-superior-duplo-08.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-duplo-09.webp",
+            "alt": "Luxo Superior Duplo — foto 9",
+            "mini": "img/quartos/luxo-superior-duplo-09.m.webp"
           }
         ]
       }
