@@ -1,0 +1,377 @@
+{
+  "meta": {
+    "titulo": "Pousada Bella Vista — Serra do Cipó",
+    "descricao": "Seu lugar para aproveitar a Serra do Cipó.",
+    "corTema": "#254B63"
+  },
+  "tema": {
+    "primaria": "#254B63",
+    "secundaria": "#254B63",
+    "titulos": "#254B63",
+    "destaque": "#B07D3E",
+    "fundo": "#F4F0E8",
+    "areia": "#E4ECEA",
+    "texto": "#2E4152",
+    "fonteTitulo": "DM Serif Display",
+    "pesosTitulo": "400",
+    "fonteTexto": "Manrope",
+    "pesosTexto": "400;500;600;700"
+  },
+  "pousada": {
+    "nome": "Pousada Bella Vista",
+    "regiao": "Serra do Cipó",
+    "logo": "img/logo.svg",
+    "coordenadas": [
+      -19.33755,
+      -43.63217
+    ],
+    "endereco": "Serra do Cipó — Santana do Riacho/MG",
+    "whatsapp": "5531999582502",
+    "whatsappMensagem": "Olá! Vi o site da Pousada Bella Vista e gostaria de consultar a disponibilidade.",
+    "instagram": "https://www.instagram.com/bellavistacipo.pousada/",
+    "googleMapsUrl": "https://maps.app.goo.gl/QXGDdBjSZTCsYq9HA"
+  },
+  "hero": {
+    "imagem": "img/sobre/capa.webp",
+    "alt": "Piscina da Pousada Bella Vista, na Serra do Cipó",
+    "frase": "Seu lugar para aproveitar a Serra do Cipó."
+  },
+  "sobre": {
+    "eyebrow": "Conheça a Bella Vista",
+    "titulo": "Uma estadia agradável para aproveitar a Serra.",
+    "textos": [
+      "A Bella Vista é uma pousada acolhedora e acessível, com piscina, jardim, área externa agradável e café da manhã incluso.",
+      "Um lugar para desacelerar, aproveitar a Serra do Cipó e viver bons momentos — com a simplicidade bem cuidada de quem gosta de receber."
+    ],
+    "fotos": [
+      {
+        "src": "img/sobre/sobre-01.webp",
+        "alt": "Prédio das acomodações e jardim",
+        "mini": "img/sobre/sobre-01.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-02.webp",
+        "alt": "Piscina à noite",
+        "mini": "img/sobre/sobre-02.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-03.webp",
+        "alt": "Chalé e jardim",
+        "mini": "img/sobre/sobre-03.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-04.webp",
+        "alt": "Piscina e área externa",
+        "mini": "img/sobre/sobre-04.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-05.webp",
+        "alt": "Jardim",
+        "mini": "img/sobre/sobre-05.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-06.webp",
+        "alt": "Café da manhã",
+        "mini": "img/sobre/sobre-06.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-07.webp",
+        "alt": "Café da manhã",
+        "mini": "img/sobre/sobre-07.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-08.webp",
+        "alt": "Café da manhã",
+        "mini": "img/sobre/sobre-08.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-09.webp",
+        "alt": "Acomodações à noite",
+        "mini": "img/sobre/sobre-09.m.webp"
+      },
+      {
+        "src": "img/sobre/sobre-10.webp",
+        "alt": "Fachada",
+        "mini": "img/sobre/sobre-10.m.webp"
+      }
+    ]
+  },
+  "acomodacoes": {
+    "eyebrow": "Acomodações",
+    "titulo": "Escolha onde descansar.",
+    "itens": [
+      {
+        "id": "economico",
+        "nome": "Econômico",
+        "chamada": "Simples e confortável, para quem quer aproveitar a Serra a dois.",
+        "capacidade": 2,
+        "camas": "Cama de casal",
+        "caracteristicas": [
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ventilador"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/economico-01.webp",
+            "alt": "Economico — foto 1",
+            "mini": "img/quartos/economico-01.m.webp"
+          },
+          {
+            "src": "img/quartos/economico-02.webp",
+            "alt": "Economico — foto 2",
+            "mini": "img/quartos/economico-02.m.webp"
+          }
+        ]
+      },
+      {
+        "id": "luxo-terreo-triplo",
+        "nome": "Luxo Térreo Triplo",
+        "chamada": "No térreo, com espaço para três.",
+        "capacidade": 3,
+        "camas": "Cama de casal + 1 cama de solteiro",
+        "caracteristicas": [
+          "No térreo",
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ventilador"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/terreo-triplo-01.webp",
+            "alt": "Terreo Triplo — foto 1",
+            "mini": "img/quartos/terreo-triplo-01.m.webp"
+          },
+          {
+            "src": "img/quartos/terreo-triplo-02.webp",
+            "alt": "Terreo Triplo — foto 2",
+            "mini": "img/quartos/terreo-triplo-02.m.webp"
+          }
+        ]
+      },
+      {
+        "id": "superior",
+        "nome": "Superior",
+        "chamada": "Confortável e bem iluminado, para o casal.",
+        "capacidade": 2,
+        "camas": "Cama de casal",
+        "caracteristicas": [
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ventilador"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/superior-01.webp",
+            "alt": "Superior — foto 1",
+            "mini": "img/quartos/superior-01.m.webp"
+          },
+          {
+            "src": "img/quartos/superior-02.webp",
+            "alt": "Superior — foto 2",
+            "mini": "img/quartos/superior-02.m.webp"
+          }
+        ]
+      },
+      {
+        "id": "luxo-superior",
+        "nome": "Luxo Superior",
+        "chamada": "O único quarto com ar-condicionado.",
+        "capacidade": 2,
+        "camas": "Cama de casal",
+        "caracteristicas": [
+          "Ar-condicionado",
+          "Varanda compartilhada com rede"
+        ],
+        "disponivel": [
+          {
+            "icone": "ar",
+            "texto": "Ar-condicionado"
+          },
+          {
+            "icone": "tv",
+            "texto": "TV"
+          },
+          {
+            "icone": "frigobar",
+            "texto": "Frigobar"
+          },
+          {
+            "icone": "check",
+            "texto": "Rede na varanda"
+          },
+          {
+            "icone": "check",
+            "texto": "Varanda compartilhada"
+          },
+          {
+            "icone": "cafe",
+            "texto": "Café da manhã incluso"
+          }
+        ],
+        "informacoes": [
+          "Check-in a partir das 14h e check-out até as 12h."
+        ],
+        "fotos": [
+          {
+            "src": "img/quartos/luxo-superior-01.webp",
+            "alt": "Luxo Superior — foto 1",
+            "mini": "img/quartos/luxo-superior-01.m.webp"
+          },
+          {
+            "src": "img/quartos/luxo-superior-02.webp",
+            "alt": "Luxo Superior — foto 2",
+            "mini": "img/quartos/luxo-superior-02.m.webp"
+          }
+        ]
+      }
+    ]
+  },
+  "localizacao": {
+    "eyebrow": "Localização",
+    "titulo": "Na Serra do Cipó, perto de tudo o que você veio aproveitar."
+  },
+  "fornecemos": {
+    "eyebrow": "Estrutura",
+    "titulo": "Para aproveitar a estadia.",
+    "itens": [
+      {
+        "icone": "piscina",
+        "titulo": "Piscina",
+        "texto": "Para os dias de descanso na Serra."
+      },
+      {
+        "icone": "folha",
+        "titulo": "Jardim e área externa",
+        "texto": "Espaços ao ar livre para aproveitar a estadia."
+      },
+      {
+        "icone": "cafe",
+        "titulo": "Café da manhã",
+        "texto": "Incluso na diária, servido das 8h às 10h."
+      },
+      {
+        "icone": "lencol",
+        "titulo": "Roupas de cama",
+        "texto": "Lençóis, fronhas e edredom inclusos na hospedagem."
+      },
+      {
+        "icone": "toalha",
+        "titulo": "Roupas de banho",
+        "texto": "Toalhas de banho e de rosto inclusas na hospedagem."
+      }
+    ]
+  },
+  "regras": {
+    "eyebrow": "O que não é permitido",
+    "titulo": "Antes de chegar, vale saber.",
+    "itens": [
+      {
+        "icone": "pet",
+        "titulo": "Animais",
+        "texto": "Não aceitamos animais de estimação."
+      },
+      {
+        "icone": "festa",
+        "titulo": "Festas",
+        "texto": "Não é permitido realizar festas ou eventos."
+      },
+      {
+        "icone": "som",
+        "titulo": "Som",
+        "texto": "Som alto não é permitido. Silêncio a partir das 22h."
+      },
+      {
+        "icone": "visita",
+        "titulo": "Visitantes",
+        "texto": "Apenas hóspedes podem circular na pousada."
+      },
+      {
+        "icone": "fumo",
+        "titulo": "Fumar",
+        "texto": "Proibido fumar dentro dos quartos."
+      }
+    ]
+  }
+}
