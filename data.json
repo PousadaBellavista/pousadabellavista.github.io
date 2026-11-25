@@ -137,7 +137,7 @@
         ],
         "informacoes": [
           "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+          "Os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
         ],
         "fotos": [
           {
@@ -226,7 +226,7 @@
         ],
         "informacoes": [
           "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+          "Os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
         ],
         "fotos": [
           {
@@ -288,7 +288,7 @@
         ],
         "informacoes": [
           "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+          "Os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
         ],
         "fotos": [
           {
@@ -310,6 +310,11 @@
             "src": "img/quartos/superior-triplo-04.webp",
             "alt": "Superior Triplo — foto 4",
             "mini": "img/quartos/superior-triplo-04.m.webp"
+          },
+          {
+            "src": "img/quartos/superior-triplo-05.webp",
+            "alt": "Superior Triplo — foto 5",
+            "mini": "img/quartos/superior-triplo-05.m.webp"
           }
         ]
       },
@@ -350,7 +355,7 @@
         ],
         "informacoes": [
           "Check-in a partir das 14h e check-out até as 12h.",
-          "As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
+          "Os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes."
         ],
         "fotos": [
           {
@@ -392,11 +397,6 @@
             "src": "img/quartos/luxo-superior-duplo-08.webp",
             "alt": "Luxo Superior Duplo — foto 8",
             "mini": "img/quartos/luxo-superior-duplo-08.m.webp"
-          },
-          {
-            "src": "img/quartos/luxo-superior-duplo-09.webp",
-            "alt": "Luxo Superior Duplo — foto 9",
-            "mini": "img/quartos/luxo-superior-duplo-09.m.webp"
           }
         ]
       }
