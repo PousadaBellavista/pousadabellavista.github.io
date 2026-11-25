@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regras da casa · Pousada Bella Vista</title>
+<meta name="description" content="Regras da casa, contatos úteis e políticas da Pousada Bella Vista, na Serra do Cipó.">
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+:root { --prim:#254B63; --dest:#B07D3E; --sec:#254B63; --tit:#254B63; --fundo:#F4F0E8; --areia:#E4ECEA; --txt:#2E4152; --ft:'DM Serif Display', Georgia, serif; --fx:'Manrope', Arial, sans-serif; }
+/* Página de regras e benefícios (versão web dos PDFs). As cores e fontes de cada pousada entram em exportar-regras-checkin.mjs */
+* { box-sizing: border-box; }
+body { font: 400 16px/1.6 var(--fx); color: var(--txt); background: #fff; }
+h1, h2, h3, h4, h5, p, ul, dl { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5 { font-family: var(--ft); color: var(--tit); font-weight: 500; line-height: 1.15; }
+strong, b { font-weight: 700; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; height: auto; }
+.ic { width: 1.2em; height: 1.2em; flex: none; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.dentro { width: min(1080px, 100% - 32px); margin-inline: auto; }
+.secao { padding: clamp(56px, 7vw, 88px) 0; }
+.secao--fundo { background: var(--fundo); }
+.eyebrow { font-family: var(--fx); font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--dest); }
+.eco-logo { width: auto; height: 34px; }
+.botao { display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px; border-radius: 99px; background: var(--prim); color: #fff; font-weight: 700; font-size: 16px; line-height: 1.25; transition: opacity .2s ease; }
+.botao span { color: inherit; }
+.botao .ic { width: 22px; height: 22px; }
+.botao--claro { background: #fff; color: var(--tit); }
+.botao:hover { opacity: .88; color: #fff; }
+.botao--claro:hover { color: var(--tit); }
+
+/* capa */
+.capa, .verso { position: relative; display: flex; overflow: hidden; color: #fff; background: var(--sec); }
+.capa { min-height: min(100svh, 820px); align-items: flex-end; }
+.capa__foto { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.capa::after, .verso::after { content: ''; position: absolute; inset: 0; }
+.capa::after { background: linear-gradient(180deg, rgba(0, 0, 0, .28) 0%, rgba(0, 0, 0, 0) 26%, rgba(0, 0, 0, .58) 56%, rgba(0, 0, 0, .86) 100%); }
+.capa__logo { position: absolute; z-index: 1; top: 0; left: max(16px, calc((100% - 1080px) / 2)); background: #fff; border-radius: 0 0 18px 18px; padding: 22px 24px 18px; }
+.capa__logo img { width: 170px; height: 92px; object-fit: contain; }
+.capa__eco { position: absolute; z-index: 1; top: 24px; right: max(16px, calc((100% - 1080px) / 2)); display: flex; flex-direction: column; align-items: flex-end; gap: 6px; font-size: 11px; letter-spacing: .2em; text-transform: uppercase; }
+.capa__texto { position: relative; z-index: 1; width: min(1080px, 100% - 32px); margin: 0 auto; padding: 180px 0 clamp(36px, 6vw, 64px); }
+.capa__texto .eyebrow { color: #fff; }
+.capa__texto .eyebrow, .capa__texto h1, .capa__linha { text-shadow: 0 1px 12px rgba(0, 0, 0, .45); }
+.capa__texto h1 { color: #fff; font-size: clamp(40px, 6vw, 68px); margin: 10px 0 14px; }
+.capa__linha { font-size: clamp(17px, 1.7vw, 20px); max-width: 620px; margin-bottom: 26px; }
+
+/* boas-vindas */
+.carta h2 { font-size: clamp(32px, 4vw, 44px); margin: 8px 0 14px; }
+.intro { font-size: clamp(17px, 1.7vw, 20px); max-width: 760px; }
+.avisos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); gap: 24px 32px; margin: 36px 0; }
+.aviso { display: flex; gap: 14px; align-items: flex-start; }
+.aviso__ic { flex: none; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: var(--fundo); color: var(--dest); }
+.aviso__ic .ic { width: 22px; height: 22px; }
+.aviso h4 { font-size: 19px; margin: 2px 0 4px; }
+.aviso p { font-size: 15px; }
+.fotos { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+.fotos img { width: 100%; height: clamp(160px, 22vw, 260px); object-fit: cover; border-radius: 10px; background: var(--areia); }
+.local { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px 24px; padding: 28px 32px; border-radius: 16px; background: var(--fundo); }
+.local h3 { font-size: 24px; margin: 6px 0 4px; }
+.local p:last-child { font-size: 15px; }
+
+/* regras */
+.cab { margin-bottom: 32px; }
+.cab h2 { font-size: clamp(34px, 4.4vw, 48px); margin-top: 8px; }
+.cab p:last-child { margin-top: 8px; }
+.colunas { columns: 2; column-gap: 48px; }
+.regra { break-inside: avoid; padding-top: 16px; margin-bottom: 26px; border-top: 1.5px solid var(--areia); font-size: 15px; line-height: 1.5; }
+.regra h3 { display: flex; align-items: baseline; gap: 10px; font-size: 21px; margin-bottom: 10px; }
+.num { font-family: var(--ft); font-size: 21px; font-weight: 400; color: var(--dest); }
+.regra p { margin-bottom: 8px; }
+.regra .nota { font-style: italic; margin-top: 8px; }
+.itens { list-style: none; }
+.itens li { position: relative; padding-left: 16px; margin-bottom: 6px; }
+.itens li::before { content: ''; position: absolute; left: 0; top: .72em; width: 8px; height: 1.5px; background: var(--dest); }
+.itens li.par { display: flex; align-items: baseline; gap: 6px; padding-left: 0; }
+.itens li.par::before { display: none; }
+.par i { flex: 1 1 24px; min-width: 16px; border-bottom: 1.5px dotted rgba(0, 0, 0, .25); transform: translateY(-3px); }
+.par b { color: var(--tit); text-align: right; }
+
+/* delivery e taxistas */
+.uteis h3 { font-size: 24px; margin: 8px 0 14px; }
+.uteis .fones + h3 { margin-top: 40px; }
+.fones { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(250px, 100%), 1fr)); gap: 10px 14px; }
+.fones li { display: flex; flex-direction: column; gap: 2px; padding: 12px 16px; border-radius: 10px; background: var(--fundo); font-size: 15px; }
+.fones a { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--dest); }
+.fones a:hover { color: var(--dest); text-decoration: underline; }
+
+/* benefícios */
+.faixa { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; padding: 28px 32px; margin-bottom: 20px; border-radius: 18px; background: var(--sec); color: #fff; }
+.faixa h2 { color: #fff; font-size: clamp(28px, 3.6vw, 38px); margin-bottom: 8px; }
+.faixa p { max-width: 680px; }
+.faixa .eco-logo { flex: none; }
+.lista { display: grid; gap: 16px; }
+.ben { display: grid; grid-template-columns: 300px minmax(0, 1fr); border-radius: 14px; overflow: hidden; background: var(--fundo); }
+.ben__foto { width: 100%; height: 100%; min-height: 220px; object-fit: cover; background: var(--areia); }
+.ben__foto--icone { display: grid; place-items: center; color: var(--dest); }
+.ben__foto--icone .ic { width: 64px; height: 64px; stroke-width: 1.2; }
+.ben__corpo { padding: 24px 28px; font-size: 15px; line-height: 1.5; }
+.ben__selo { display: inline-block; padding: 3px 10px; margin-bottom: 8px; border-radius: 99px; background: var(--dest); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.ben h4 { font-size: 24px; }
+.ben__preco { font-family: var(--ft); font-size: 19px; color: var(--dest); margin: 2px 0 8px; }
+.ben__blocos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 12px 24px; margin-top: 12px; }
+.ben h5 { font-family: var(--fx); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 6px; }
+.ben .itens li { margin-bottom: 3px; }
+
+/* políticas */
+.politicas .regra { break-inside: auto; }
+.politicas .regra h3 { break-after: avoid; font-size: 19px; }
+.aceite { margin-top: 12px; padding: 18px 24px; border-radius: 10px; background: #fff; font-size: 15px; text-align: center; }
+
+/* verso */
+.verso { min-height: min(90svh, 680px); align-items: flex-end; justify-content: center; text-align: center; }
+.verso::after { background: linear-gradient(180deg, rgba(0, 0, 0, .15), rgba(0, 0, 0, .72) 60%); }
+.verso__conteudo { position: relative; z-index: 1; width: min(800px, 100% - 32px); padding: 120px 0 44px; }
+.verso .eyebrow { color: #fff; }
+.verso h2 { color: #fff; font-size: clamp(38px, 5.4vw, 58px); margin: 10px 0; }
+.verso__end { margin-bottom: 24px; }
+.contatos { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 26px; margin-top: 28px; font-weight: 600; }
+.contatos a { display: inline-flex; align-items: center; gap: 8px; color: #fff; }
+.contatos a:hover { color: #fff; text-decoration: underline; }
+.verso .eco-logo { margin: 28px auto 0; }
+
+@media (max-width: 820px) {
+  .colunas { columns: 1; }
+  .ben { grid-template-columns: 1fr; }
+  .ben__foto { height: 220px; min-height: 0; }
+  .fotos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fotos img:first-child { grid-column: 1 / -1; }
+  .local, .faixa { padding: 24px 20px; }
+  .faixa { flex-direction: column-reverse; }
+  .capa__logo { padding: 16px 16px 12px; }
+  .capa__logo img { width: 120px; height: 68px; }
+  .capa__eco .eco-logo { height: 26px; }
+  .botao { padding: 14px 20px; font-size: 15px; }
+}
+
+.verso__logo { display: block; width: 220px; height: auto; margin: 28px auto 0; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0M5 12.6a10 10 0 0 1 14 0M8.5 16.3a5 5 0 0 1 7 0"/><circle cx="12" cy="19.6" r=".9"/></symbol>
+      <symbol id="i-ar" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9M9.5 4.5 12 7l2.5-2.5M9.5 19.5 12 17l2.5 2.5"/></symbol>
+      <symbol id="i-tv" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+      <symbol id="i-frigobar" viewBox="0 0 24 24"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M6 10h12M9 6v2M9 13v3"/></symbol>
+      <symbol id="i-chuveiro" viewBox="0 0 24 24"><path d="M4 21V7a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4M9 9h6a3 3 0 0 0-6 0ZM10 13v1M12 13v2M14 13v1M10.5 17v1M13.5 17v1"/></symbol>
+      <symbol id="i-cafe" viewBox="0 0 24 24"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6V9ZM17 11h1.5a2.5 2.5 0 0 1 0 5H16.5M8 2.5c-.6 1 .6 2-.2 3M12 2.5c-.6 1 .6 2-.2 3"/></symbol>
+      <symbol id="i-cachoeira" viewBox="0 0 24 24"><path d="M3 4h7v4M14 4h7M8 8v8M11 8v9M14 4v12M17 8v7M3 19c2 0 2-1.5 4.5-1.5S10 19 12 19s2-1.5 4.5-1.5S19 19 21 19M3 8h7"/></symbol>
+      <symbol id="i-restaurante" viewBox="0 0 24 24"><path d="M6 3v7a2 2 0 0 0 4 0V3M8 3v18M17 21V3c-2 1-3 4-3 8h3"/></symbol>
+      <symbol id="i-mercado" viewBox="0 0 24 24"><path d="M2.5 3.5h3l2.4 11.3a1.5 1.5 0 0 0 1.5 1.2h8.4a1.5 1.5 0 0 0 1.5-1.2L21 7H6.4"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17.5" cy="20" r="1.2"/></symbol>
+      <symbol id="i-farmacia" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M12 8v8M8 12h8"/></symbol>
+      <symbol id="i-atrativo" viewBox="0 0 24 24"><path d="m3 20 6-11 4 6 2.5-3.5L21 20H3ZM16 4.5a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0"/></symbol>
+      <symbol id="i-trilha" viewBox="0 0 24 24"><circle cx="13" cy="4" r="1.6"/><path d="m9.5 21 2-6 2.5 2.5V21M8 11l2.8-3.3a1.5 1.5 0 0 1 2.2-.1l1.5 1.6 2.5 1M11.5 15l1.5-5M6 21l1.8-5.5M18 9v12"/></symbol>
+      <symbol id="i-lencol" viewBox="0 0 24 24"><path d="M3 18v-6.5A2.5 2.5 0 0 1 5.5 9h13a2.5 2.5 0 0 1 2.5 2.5V18M3 14h18M3 18v2M21 18v2M6 9V6a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1v3M12.5 9V6a1 1 0 0 1 1-1H17a1 1 0 0 1 1 1v3"/></symbol>
+      <symbol id="i-toalha" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8V7a3 3 0 0 0-3-3Zm0 0a3 3 0 0 0-3 3v3h6M8 15h11"/></symbol>
+      <symbol id="i-carro" viewBox="0 0 24 24"><path d="M5 16H3.5v-4l2-5a2 2 0 0 1 1.9-1.3h9.2a2 2 0 0 1 1.9 1.3l2 5v4H19M9 16h6M3.5 12h17"/><circle cx="7" cy="16.5" r="2"/><circle cx="17" cy="16.5" r="2"/></symbol>
+      <symbol id="i-pe" viewBox="0 0 24 24"><circle cx="13" cy="4" r="1.7"/><path d="m7 21 3-7 3 3v4M7.5 11l3-4 3.5 1 1.5 3.5 2.5 1M10 14l1.8-5.5"/></symbol>
+      <symbol id="i-sabonete" viewBox="0 0 24 24"><path d="M9 3h5M11.5 3v3M8 9a2 2 0 0 1 2-3h3a2 2 0 0 1 2 3l1 1.5a3 3 0 0 1 .5 1.7V19a2 2 0 0 1-2 2H8.5a2 2 0 0 1-2-2v-6.8a3 3 0 0 1 .5-1.7L8 9Z"/></symbol>
+      <symbol id="i-pet" viewBox="0 0 24 24"><circle cx="5.5" cy="10" r="1.8"/><circle cx="9" cy="5.5" r="1.8"/><circle cx="15" cy="5.5" r="1.8"/><circle cx="18.5" cy="10" r="1.8"/><path d="M12 11c-2.8 0-5.5 4.5-5.5 7a2.5 2.5 0 0 0 3.5 2.2 5 5 0 0 1 4 0 2.5 2.5 0 0 0 3.5-2.2c0-2.5-2.7-7-5.5-7Z"/></symbol>
+      <symbol id="i-festa" viewBox="0 0 24 24"><path d="m3 21 5-14 9 9-14 5ZM6 13.5 10.5 18M13 3c.5 1.2.5 2.4-.5 3.5M18 8.5c1-.6 2.2-.6 3.5 0M16 3l.5 1M21 7l-1 .5M15 9c1.5-2 3-2.5 4.5-2"/></symbol>
+      <symbol id="i-som" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5v14l-4.5-4.5H4v-5ZM16 9.5c1 1.4 1 3.6 0 5M18.8 7c2.3 2.7 2.3 7.3 0 10"/></symbol>
+      <symbol id="i-visita" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M17 4.7a3.5 3.5 0 0 1 0 6.6M19 14.2A6.5 6.5 0 0 1 21.5 20"/></symbol>
+      <symbol id="i-fumo" viewBox="0 0 24 24"><rect x="2.5" y="14" width="15" height="4" rx=".5"/><path d="M14 14v4M20 14v4M17 4c0 2 2.5 2 2.5 4.5S17 10 17 12M21 4c0 2 1.5 2.5 1.5 4.5"/></symbol>
+      <symbol id="i-telefone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.5 4.5-2.2 1.4a11 11 0 0 0 6.3 6.3l1.4-2.2L20 15.5V19a1.5 1.5 0 0 1-1.5 1.5A15.5 15.5 0 0 1 3.5 5.5 1.5 1.5 0 0 1 5 4Z"/></symbol>
+      <symbol id="i-piscina" viewBox="0 0 24 24"><path d="M8 15V5a2 2 0 0 1 4 0M16 15V5a2 2 0 0 1 4 0M8 9h8M8 12h8M2 18c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1M2 21c1.5 0 1.5-1 3-1s1.5 1 3 1 1.5-1 3-1 1.5 1 3 1 1.5-1 3-1 1.5 1 3 1"/></symbol>
+      <symbol id="i-sauna" viewBox="0 0 24 24"><path d="M3 17h18M5 17v4M19 17v4M3 13h18v4M8 9c-.8-1 .8-2 0-3s.8-2 0-3M12 9c-.8-1 .8-2 0-3s.8-2 0-3M16 9c-.8-1 .8-2 0-3s.8-2 0-3"/></symbol>
+      <symbol id="i-jogos" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1"/><circle cx="15.5" cy="8.5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="8.5" cy="15.5" r="1"/><circle cx="15.5" cy="15.5" r="1"/></symbol>
+      <symbol id="i-academia" viewBox="0 0 24 24"><path d="M6 7v10M3.5 9.5v5M18 7v10M20.5 9.5v5M6 12h12"/></symbol>
+      <symbol id="i-onibus" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="15" rx="3"/><path d="M4 11h16M8 3v8M7 18v2.5M17 18v2.5"/><circle cx="8" cy="14.5" r=".8"/><circle cx="16" cy="14.5" r=".8"/></symbol>
+      <symbol id="i-cozinha" viewBox="0 0 24 24"><path d="M4 10h16v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-6ZM2 10h2M20 10h2M9 6.5c0-1 1-1.5 1-2.5M14 6.5c0-1 1-1.5 1-2.5"/></symbol>
+      <symbol id="i-massagem" viewBox="0 0 24 24"><circle cx="7" cy="9" r="2"/><path d="M3 15h18M5 15c1-2 3-3 5-3h4c2 0 3.5.7 4.5 2M4 19h16M14 5c.8 1 .8 2 0 3M17 4c1.2 1.4 1.2 3 0 4.5"/></symbol>
+      <symbol id="i-churrasco" viewBox="0 0 24 24"><path d="M4 9h16a8 8 0 0 1-16 0ZM8 17l-2 4M16 17l2 4M12 17v4M9 2.5c-.5 1 .5 2 0 3.5M13 2.5c-.5 1 .5 2 0 3.5"/></symbol>
+      <symbol id="i-presente" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-8M12 8v13M12 8S10.5 3.5 8 3.5a2.2 2.2 0 0 0 0 4.5M12 8s1.5-4.5 4-4.5a2.2 2.2 0 0 1 0 4.5"/></symbol>
+      <symbol id="i-estrela" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></symbol>
+      <symbol id="i-relogio" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-preco" viewBox="0 0 24 24"><path d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9-9-9Z"/><circle cx="7.5" cy="7.5" r="1.3"/></symbol>
+      <symbol id="i-pessoas" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16.5 4.8a3.3 3.3 0 0 1 0 6.4M18.5 14a6.5 6.5 0 0 1 3 6"/></symbol>
+      <symbol id="i-cama" viewBox="0 0 24 24"><path d="M3 5v15M3 16h18v4M21 16v-3a3 3 0 0 0-3-3h-8v6M6.5 12.5a1.5 1.5 0 1 0 0-.01"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+      <symbol id="i-proibido" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><path d="M3 8.5A1.5 1.5 0 0 1 4.5 7h2.8l1.5-2.5h6.4L16.7 7h2.8A1.5 1.5 0 0 1 21 8.5V18a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18V8.5Z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+      <symbol id="i-mapa" viewBox="0 0 24 24"><path d="m3 6.5 6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5V6.5ZM9 4v13.5M15 6.5V20"/></symbol>
+      <symbol id="i-site" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.5 20.5 4.8 16A8.5 8.5 0 1 1 8 19.2l-4.5 1.3Z"/><path d="M9 8.5c0 3.3 3.2 6.5 6.5 6.5l1-1.5-2-1-1 .8c-1-.4-2.4-1.8-2.8-2.8l.8-1-1-2L9 8.5Z"/></symbol>
+      <symbol id="i-rota" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H16a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h7.5"/></symbol>
+      <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+      <symbol id="i-seta-esq" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7"/></symbol>
+      <symbol id="i-seta-dir" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-folha" viewBox="0 0 24 24"><path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19 13 11"/></symbol>
+    </defs>
+  </svg>
+<main>
+<header class="capa">
+  <img class="capa__foto" src="../img/sobre/capa.webp" alt="Piscina da Pousada Bella Vista, na Serra do Cipó" fetchpriority="high">
+  <div class="capa__logo"><img src="../img/logo.svg" alt="Pousada Bella Vista"></div>
+  <div class="capa__texto">
+    <p class="eyebrow">Guia do hóspede · Serra do Cipó</p>
+    <h1>Boas-vindas à Bella Vista</h1>
+    <p class="capa__linha">Regras da casa e tudo o que você precisa saber para aproveitar a sua estadia.</p>
+    <a class="botao botao--claro" href="https://maps.app.goo.gl/QXGDdBjSZTCsYq9HA" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-mapa"></use></svg><span>Como chegar · Abrir no Google Maps</span></a>
+  </div>
+</header>
+
+<section class="secao carta"><div class="dentro">
+  <p class="eyebrow">Sua reserva está confirmada</p>
+  <h2>Prezado(a) hóspede,</h2>
+  <p class="intro">É com grande alegria que confirmamos a sua reserva na Pousada Bella Vista. Estamos ansiosos para recebê-los e proporcionar uma estadia confortável, tranquila e memorável na Serra do Cipó.</p>
+  <div class="avisos">
+    <div class="aviso"><div class="aviso__ic"><svg class="ic" aria-hidden="true"><use href="#i-pessoas"></use></svg></div><div><h4>Documentos no check-in</h4><p>É obrigatório apresentar documentos de todos os hóspedes. Crianças desacompanhadas dos pais precisam de autorização dos pais ou responsáveis.</p></div></div>
+    <div class="aviso"><div class="aviso__ic"><svg class="ic" aria-hidden="true"><use href="#i-cafe"></use></svg></div><div><h4>Alergias e restrições</h4><p>Avise-nos com antecedência sobre alergias ou restrições alimentares, para prepararmos o seu café da manhã da melhor forma.</p></div></div>
+  </div>
+  <div class="fotos"><img src="../img/sobre/sobre-01.m.webp" alt="Prédio das acomodações e jardim" loading="lazy"><img src="../img/sobre/sobre-02.m.webp" alt="Piscina à noite" loading="lazy"><img src="../img/sobre/sobre-03.m.webp" alt="Chalé e jardim" loading="lazy"></div>
+  <div class="local">
+    <div><p class="eyebrow">Como chegar</p><h3>Pousada Bella Vista</h3><p>Serra do Cipó — Santana do Riacho/MG</p></div>
+    <a class="botao " href="https://maps.app.goo.gl/QXGDdBjSZTCsYq9HA" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-mapa"></use></svg><span>Abrir no Google Maps</span></a>
+  </div>
+</div></section>
+
+<section class="secao secao--fundo"><div class="dentro">
+  <div class="cab"><p class="eyebrow">Pousada Bella Vista · Serra do Cipó</p><h2>Regras da casa</h2>
+    <p>Pensadas para o bem-estar e a boa convivência de todos os hóspedes.</p></div>
+  <div class="colunas"><section class="regra"><h3><span class="num">01</span>Café da Manhã</h3><ul class="itens"><li>Servido no estilo buffet self-service, no salão das 08:00 às 10:00.</li><li>Não é permitido comparecer sem camisa ou apenas com roupas de banho.</li><li>Não é permitido levar utensílios para as suítes ou para a área da piscina.</li></ul></section>
+<section class="regra"><h3><span class="num">02</span>Acomodações</h3><ul class="itens"><li>As fotos são ilustrativas: os quartos podem apresentar diferenças de cores, tamanhos e outros detalhes em relação às imagens.</li></ul></section>
+<section class="regra"><h3><span class="num">03</span>Frigobar</h3><ul class="itens"><li>Ele pode estar vazio ou já abastecido. Tudo o que for consumido da pousada será cobrado no check-out. Fique à vontade para abastecer com suas próprias bebidas e snacks, se preferir!</li></ul></section>
+<section class="regra"><h3><span class="num">04</span>Check-in e Check-out</h3><ul class="itens"><li>Check-in a partir das 14:00 (avise a recepção caso vá chegar após as 22h).</li><li>Check-out até as 12:00. Após esse horário, há cobrança por hora excedente (consulte na recepção). Sujeito a multa em caso de atrasos.</li><li>Entregue as chaves na recepção para conferência.</li></ul></section>
+<section class="regra"><h3><span class="num">05</span>Silêncio</h3><ul class="itens"><li>Mantenha a tranquilidade, especialmente após as 22:00.</li><li>Silêncio absoluto entre as 22:00 e as 08:00.</li><li>Proibido som nas áreas da pousada.</li></ul></section>
+<section class="regra"><h3><span class="num">06</span>Proibições</h3><ul class="itens"><li>Não utilizar churrasqueiras elétricas, grill, air fryer ou panelas elétricas nas suítes.</li><li>Fumar apenas nas áreas externas, sujeito à multa.</li><li>Não aceitamos pets; não é permitida a entrada de animais de qualquer porte.</li><li>Proibido fazer churrasco na pousada.</li></ul></section>
+<section class="regra"><h3><span class="num">07</span>Manutenção</h3><ul class="itens"><li>A manutenção é feita diariamente, mediante solicitação na recepção até as 11:00.</li><li>A troca de roupa de cama é feita na terceira diária (solicite se desejar antes).</li><li>Organize os objetos pessoais e não deixe toalhas no chão.</li></ul></section>
+<section class="regra"><h3><span class="num">08</span>Segurança e Economia</h3><ul class="itens"><li>A pousada não se responsabiliza por objetos pessoais deixados nas áreas comuns ou suítes.</li><li>Verifique se a TV, o ventilador ou o ar-condicionado e as luzes estão desligados e se as torneiras estão bem fechadas ao sair.</li></ul></section>
+<section class="regra"><h3><span class="num">09</span>Consumo de Bebidas</h3><ul class="itens"><li>Permitido nas áreas externas, porém não são permitidos coolers e isopores.</li></ul></section>
+<section class="regra"><h3><span class="num">10</span>Toalhas e roupas de cama</h3><p>Toalhas e roupas de cama manchadas ou danificadas serão cobradas:</p><ul class="itens"><li class="par"><span>Toalha de banho</span><i></i><b>R$ 35,00</b></li><li class="par"><span>Toalha de rosto</span><i></i><b>R$ 20,00</b></li><li class="par"><span>Lençol/virol casal</span><i></i><b>R$ 80,00</b></li><li class="par"><span>Lençol/virol solteiro</span><i></i><b>R$ 60,00</b></li><li class="par"><span>Fronha</span><i></i><b>R$ 15,00</b></li><li class="par"><span>Edredom/manta</span><i></i><b>R$ 180,00</b></li><li class="par"><span>Chave e chaveiro danificados ou perdidos</span><i></i><b>R$ 25,00</b></li></ul></section>
+<section class="regra"><h3><span class="num">11</span>Horários de Funcionamento</h3><ul class="itens"><li class="par"><span>Café da manhã</span><i></i><b>08:00 às 10:00</b></li><li class="par"><span>Piscina (área comum)</span><i></i><b>09:00 às 21:00</b></li><li>Não usar bronzeador, cremes de cabelo ou descolorantes antes de entrar na piscina.</li><li>Proibido copos de vidro e alimentos na área da piscina.</li></ul></section></div>
+</div></section>
+
+<section class="secao uteis"><div class="dentro">
+  <div class="cab"><p class="eyebrow">Durante a sua estadia</p><h2>Delivery e taxistas</h2></div>
+  <h3>Delivery</h3>
+  <ul class="fones"><li><strong>Hamburgueria e Pizzaria Na Brasa</strong><a href="tel:+5531982988640"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98298-8640</a></li><li><strong>Pizzaria Box da Massa</strong><a href="tel:+5531997724208"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99772-4208</a></li><li><strong>Sushinatu</strong><a href="tel:+5531981193565"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98119-3565</a></li><li><strong>Tengu Sushi</strong><a href="tel:+5531983706424"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98370-6424</a></li><li><strong>Pizzaria El Shadday</strong><a href="tel:+5531984397073"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98439-7073</a></li><li><strong>Açaí Good</strong><a href="tel:+5531991109175"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99110-9175</a></li><li><strong>Cê Ki Sabe</strong><a href="tel:+5531981053222"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98105-3222</a></li><li><strong>Feito a Mão Burguer</strong><a href="tel:+5531972254247"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 97225-4247</a></li><li><strong>Escritório Cipó Beer</strong><a href="tel:+5531972605989"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 97260-5989</a></li></ul>
+  <h3>Taxistas</h3>
+  <ul class="fones"><li><strong>Zeca</strong><a href="tel:+5531986311047"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98631-1047</a></li><li><strong>Juliano</strong><a href="tel:+5531992525999"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99252-5999</a></li><li><strong>Wesley</strong><a href="tel:+5531997769238"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99776-9238</a></li><li><strong>Carlos</strong><a href="tel:+5531995330608"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99533-0608</a></li><li><strong>Robert Rodrigues</strong><a href="tel:+5531996197928"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99619-7928</a></li><li><strong>Kelvin Soares</strong><a href="tel:+5531982310795"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98231-0795</a></li><li><strong>Fabiano</strong><a href="tel:+5531985548530"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98554-8530</a></li><li><strong>Joyce</strong><a href="tel:+5531995962079"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 99596-2079</a></li><li><strong>Luber</strong><a href="tel:+5531988954522"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98895-4522</a></li><li><strong>Piu</strong><a href="tel:+5531984344567"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98434-4567</a></li><li><strong>Roger</strong><a href="tel:+5531985998338"><svg class="ic" aria-hidden="true"><use href="#i-telefone"></use></svg>(31) 98599-8338</a></li></ul>
+</div></section>
+
+<section class="secao secao--fundo politicas"><div class="dentro">
+  <div class="cab"><p class="eyebrow">Para a sua tranquilidade</p><h2>Cancelamento e reagendamento</h2></div>
+  <div class="colunas"><section class="regra"><h3>Política de Cancelamento</h3><ul class="itens"><li>Cancelamentos com reembolso integral são permitidos até 7 dias após a efetivação da reserva, conforme o Art. 49 do Código de Defesa do Consumidor.</li><li>Após esse prazo, não haverá reembolso nem concessão de créditos.</li><li>Para reservas feitas com menos de 7 dias de antecedência, porém com no mínimo 24 horas desde a realização, concedemos 50% de estorno do valor da hospedagem. Caso o sinal pago não seja equivalente a 50% do valor total, o sinal fica retido e não cobraremos o restante.</li><li>Reservas feitas com menos de 24 horas de antecedência do horário de check-in não são reembolsáveis, e o pagamento fica retido.</li><li>Em caso de no-show (não comparecimento sem aviso prévio), o valor pago não será devolvido.</li><li>Casos de força maior (doença grave, falecimento, desastres naturais) poderão ser analisados mediante comprovação documental.</li><li>Após a realização do check-in e o início da hospedagem, qualquer solicitação de cancelamento das diárias remanescentes será tratada apenas como cancelamento da reserva. Nesses casos, não haverá concessão de reembolso, crédito para utilização futura, reagendamento ou qualquer outra forma de compensação financeira, independentemente do motivo da solicitação.</li></ul></section>
+<section class="regra"><h3>Política de Reagendamento</h3><ul class="itens"><li>Reagendamentos são permitidos <strong>sem custo</strong>, com <strong>aviso prévio de ao menos 7 dias</strong> da data original do check-in.</li><li>Com <strong>menos de 7 dias de antecedência</strong>, será cobrada uma <strong>taxa de R$ 150,00</strong>, válida para remarcação em até 90 dias.</li><li>O reagendamento será realizado com base na tarifa vigente para a nova data escolhida. Caso a reserva original tenha sido realizada com cupom de desconto, promoção ou tarifa promocional, essas condições não serão mantidas na remarcação. Será aplicado o valor vigente no período da nova reserva.</li><li>O reagendamento não reinicia nem altera a política de cancelamento da reserva. O prazo para cancelamento permanece vinculado à data da compra original, não sendo concedido um novo período de 7 dias em razão da remarcação.</li><li>Caso o hóspede não possa comparecer na data remarcada ou entrar em contato para um novo reagendamento, a reserva será considerada no-show, sem direito a novo reagendamento, concessão de créditos, reembolso ou qualquer outra compensação.</li><li>Caso a tarifa vigente da nova data seja inferior ao valor originalmente pago pela reserva, não haverá devolução da diferença. O valor já pago será considerado integralmente utilizado para a reserva remarcada, não gerando direito a reembolso, crédito ou saldo para utilização futura.</li><li>A acomodação reservada está sujeita a alteração pela pousada, conforme necessidade operacional e disponibilidade, desde que a nova acomodação seja compatível com a quantidade de hóspedes da reserva e mantenha padrão equivalente ou superior ao contratado.</li><li>Reservas realizadas para um número de hóspedes inferior à capacidade máxima da acomodação não garantem a permanência naquela categoria específica, não sendo devida qualquer compensação, desconto, crédito ou reembolso em razão dessa alteração.</li><li>Somente uma remarcação será permitida por reserva.</li></ul><p><strong>Ao confirmar a reserva, o cliente declara estar ciente e de acordo com estas políticas.</strong></p></section></div>
+  
+</div></section>
+</main>
+
+<footer class="verso">
+  <img class="capa__foto" src="../img/sobre/sobre-04.webp" alt="Piscina e área externa" loading="lazy">
+  <div class="verso__conteudo">
+    <p class="eyebrow">Até breve</p>
+    <h2>Esperamos por você!</h2>
+    <p class="verso__end">Serra do Cipó — Santana do Riacho/MG</p>
+    <a class="botao botao--claro" href="https://maps.app.goo.gl/QXGDdBjSZTCsYq9HA" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-mapa"></use></svg><span>Abrir localização no Google Maps</span></a>
+    <div class="contatos">
+      <a href="https://wa.me/5531999582502" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-whatsapp"></use></svg>(31) 99958-2502</a>
+      <a href="https://www.instagram.com/bellavistacipo.pousada/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-instagram"></use></svg>@bellavistacipo.pousada</a>
+      
+    </div>
+    <img class="verso__logo" src="../regras/logo-branco.svg" alt="Pousada Bella Vista">
+  </div>
+</footer>
+</body>
+</html>
